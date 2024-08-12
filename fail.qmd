@@ -1,0 +1,17 @@
+---
+title: "Fail"
+format: html
+editor: visual
+---
+
+```{r}
+f <- function() g()
+g <- function() h()
+h <- function() i()
+i <- function() stop("Error")
+```
+
+```{r}
+f()
+```
+
